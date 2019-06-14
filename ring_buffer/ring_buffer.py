@@ -12,6 +12,7 @@ class RingBuffer:
     def append(self, item):
         # print(self.current)
         # print(self.storage)
+
         # replaces the item for the "current" index
         self.storage[self.current] = item
         # check that our current position is not beyond the lists length
