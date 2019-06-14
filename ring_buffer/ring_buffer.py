@@ -8,10 +8,10 @@ class RingBuffer:
         self.current = 0
         self.storage = [None]*capacity
 
-    # adds a new element and deletes the last element
+    # adds a new element and deletes the last element if length == capacity
     def append(self, item):
-        # print(self.current)
-        # print(self.storage)
+        print(self.current)
+        print(self.storage)
 
         # replaces the item for the "current" index
         self.storage[self.current] = item
@@ -31,5 +31,5 @@ class RingBuffer:
         for i in self.storage:
             if i is not None:
                 returnArr.append(i)
-        # print(returnArr)
+        print(returnArr)
         return returnArr
